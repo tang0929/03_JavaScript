@@ -12,7 +12,7 @@ const body = document.querySelector("body"); /* body 태그를 선택 */
 /* 다크모드 활성화 함수 */
 function darkmode(){
     body.style.color="white"; /* 흰색 글자로 변경 */
-    body.style.backgroundColor = "black" /* 검정 배경으로 변경 */
+    body.style.backgroundColor = "black"; /* 검정 배경으로 변경 */
 
 }
 /* 라이트모드 활성화 함수 */
@@ -20,4 +20,8 @@ function lightmode(){
     body.style.color="black"; /* 검은 글자로 변경 */
     body.style.backgroundColor = "white" /* 하얀 배경으로 변경 */
 
-}                                                                                                                                                            
+}
+function quest(){
+    body.style.borderColor="Blue";
+
+}

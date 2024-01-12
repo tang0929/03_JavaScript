@@ -13,10 +13,10 @@ const result = document.getElementById("calcResult");
 /* 두 수를 더해서 화면에 출력하는 함수 */
 function plusFn(){
     // input요소.value : input 요소에 작성된 값 얻어오기
-    const value1 = number1.value;
-    const value2 = number2.value;
-    console.log(value1, value2);
-    console.log("두 수의 합 : ",Number(value1)+Number(value2));
+    const a1 = number1.value;
+    const a2 = number2.value;
+    console.log(a1, a2);
+    console.log("두 수의 합 : ",Number(a1)+Number(a2));
 
     // input 요소에 작성된 값은 무조건 string 형태이기 때문에 그냥 더하면 이어써짐
     // 문자열(string)을 숫자(number)로 변환하는 코드를 수행
@@ -27,7 +27,7 @@ function plusFn(){
 
     // 두 수의 합을 아이디가 calcResult인 요소의 내부 글자로 대입하기
 
-    result.innerText = Number(value1) + Number(value2);
+    result.innerText = Number(a1) + Number(a2);
 }
 
 /* 빼기 함수 */
