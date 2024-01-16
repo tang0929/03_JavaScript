@@ -41,11 +41,26 @@
     </pre>
 
     <hr>
-        잔액 : <span id = "balance">10000 원</span><br>
-        금액 : <input type="number" id="amount"> 원<br>
-        <button onclick="deposit()">입금</button>
-        <button onclick="withdrawal()">출금</button>
+    <div class="account">
+      <div class="row">
+        <h1>잔액 : <span id="output"></span> 원</h1>
+      </div>
+      <div class="row input-row">
+        <label for="amount">금액 : </label>
+        <input type="text" id="amount">
+        <span>원</span>
+  
+      </div>
+      <div class="row btn-row">
+        <button class="deposit-btn" onclick="deposit()">입금</button>
+        <button class="withdrawal-btn" onclick="withdrawal()">출금</button>
+      </div>
+    </div>
+  
+
+
     <!-- <button onclick="test()">연습용 출금 버튼</button> -->
+  
 
     <script src="../js/06_입출금하기.js"></script>
 </body>

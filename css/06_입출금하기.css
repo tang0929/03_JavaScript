@@ -1,8 +1,17 @@
-.container1{
-    display:flex;
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing:border-box;
+}
+
+
+.container-1{
+   
     width:800px;
     height:600px;
     margin:auto;
     border:1px solid black;
-    position : relative;
+    
 }
+
+
