@@ -27,6 +27,5 @@ function roll(){
      
     }
     
-    
-
 }
+
