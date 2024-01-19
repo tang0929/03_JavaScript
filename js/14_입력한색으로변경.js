@@ -1,24 +1,16 @@
-/* 입력한 색상으로 배경색 변경하기 */
-const box3 = document.querySelector("#box3");
-const input3 = document.querySelector("#input3");
-const btn3 = document.querySelector("#btn3");
 
-btn3.addEventListener("click",function(){
-    box3.style.backgroundColor = input3.value;
-})
+// 요소를 한 번에 여러개 얻어오면 배열 형태로 저장된다!
+// -> 얻어온 요소를 사용하려면 배열의 index별 요소를 하나씩 꺼내서
+//    사용해야 한다!!
 
-/* #input3에서 enter키 입력시 배경색 변경 */
-input3.addEventListener("keyup",function(e){
-// e : 이벤트 객체(발생한 이벤트에 대한 정보를 담은 객체)
-// e.key : 입력된 키
-if(e.key=="Enter"){
-    box3.style.backgroundColor = input3.value;
-}
-})
+// ex) boxList.style.color = "red";  // 배열의 글자색을 red 변경 (X)
+//    boxList[0].style.color = "blue"; // 0번 인덱스 요소 글자색 blue (O)
 
-// box3을 클릭하면 현재 배경색을 alert로 출력
-box3.addEventListener("click",function(e){
-    // e.target : 이벤트가 발생한 대상 요소(이벤트 발생 요소)
+const boxList = document.querySelectorAll(".box"); 
+const inputList = document.querySelectorAll(".color-input");
 
-    alert(`배경색 : ${e.target.style.backgroundColor}`);
-})
+document.querySelector("#changeButton").addEventListener("click", function(){
+    for(let i=0; i<boxList.length ; i++){
+      boxList[i].style.backgroundColor = inputList[i].value;
+    }
+});

@@ -6,11 +6,12 @@ let success = document.getElementById("up");
 let fail = document.getElementById("down");
 
 
+    
+
+
 function roll(){
     const randomNumber = Number(Math.floor(Math.random()*100)+1);
     
-    let success = 0;
-    let fail = 0;
 
 
     if (randomNumber >= 0 && randomNumber <=30){
