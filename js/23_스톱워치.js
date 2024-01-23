@@ -20,7 +20,7 @@ startBtn.addEventListener("click", e => {
         count++;
         output(); // 화면에 시간을 출력
     }, 10); // 10ms마다 적용
-    e.target.disabled = true;
+    e.target.textContent = "PAUSE";
 
 });
 
@@ -74,6 +74,39 @@ window.clearInterval(currentInterval);
 count = 0;
 output();
 
-// start 버튼 재활성화
-startBtn.disabled = false;
+// // start 버튼 재활성화
+// startBtn.disabled = false;
+
+
+ // START 버튼의 내용을 "START"로 변경
+ startBtn.textContent = "START";
+
+
+ // #recordContainer의 내용을 모두 삭제(== 빈 문자열로 변경)
+  recordContainer.innerHTML = ""
+
 });
+
+/* recordBtn 클릭 시 */
+recordBtn.addEventListener("click", () => {
+
+    // li 요소 생성
+    const li = document.createElement("li");
+  
+    // li 요소의 내용으로
+    // #display에 출력된 시간을 얻어와 대입
+    li.innerText = display.innerText;
+  
+    // #recordContainer의 첫 번째 자식으로 li 추가
+    recordContainer.prepend(li);
+  });
+  
+
+
+/* 요소.textContent 와 요소.innerText */
+// textContent를 이용해 요소에 작성된 내용 얻어오기
+// -> HTML 파일에 작성된 내용 형태(단, 태그 빼고) 그대로 얻어옴
+//    (띄어쓰기, 엔터 모두 포함)
+
+// innerText를이용해 요소에 작성된 내용 얻어오기
+// -> 브라우저 화면에 보이는 형태(단, 태그 빼고)를 얻어옴
