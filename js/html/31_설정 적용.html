@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/31_설정적용.css">
+</head>
+<body>
+    <table>
+    <tr>
+        <td><b>너비 : </b></td>
+        <td>
+            <input type="number" id="width">px
+        </td>
+        <td><b>높이 : </b></td>
+        <td> <input type="number" id="height">px</td>
+    </tr>
+    <tr>
+        <td><b>글자크기 : </b></td>
+        <td>
+            <input type="number" id="size">px
+        </td>
+        <td><b>굵기 : </b></td>
+        <td>보통 <input type="radio" name="weight" value="normal"> 굵게 <input type="radio" name="weight" value="bold"></td>
+    </tr>
+    <tr>
+        <td><b>글자색 : </b></td>
+        <td>
+            <input type="text" id="fontColor">
+        </td>
+        <td><b>배경색 : </b></td>
+        <td>
+            <input type="text" id="backgroundColor">
+        </td>
+    </tr>
+    <tr>
+        <td><b>가로정렬 : </b></td>
+        <td>왼쪽 <input type="radio" name="rowPosition" value="rowLeft">
+            가운데 <input type="radio" name="rowPosition" value="rowCenter">
+            오른쪽 <input type="radio" name="rowPosition" value="rowRight"></td>
+    </tr>
+    <tr>
+        <td><b>세로정렬 : </b></td>
+        <td>위 <input type="radio" name="colPosition" value="colUp">
+            가운데 <input type="radio" name="colPosition" value="colCenter">
+            아래 <input type="radio" name="colPosition" value="colDown"></td>
+    </tr>
+    <tr>
+        <td>
+            <b>출력 문자열 :</b>
+        </td>
+        <td colspan = "3">
+            <input type="text" id="content" size="50px">
+        </td>
+    </tr>
+    <tr>
+        <td><button id="apply">적용하기</button></td>
+    </tr>
+    
+
+    
+
+
+    </table>
+
+    <div id="box"></div>
+
+    <script src="../31_설정적용.js"></script>
+    
+</body>
+</html>

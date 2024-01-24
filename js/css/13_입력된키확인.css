@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+.container{
+    height:100px;
+    width:300px;
+    border:1px solid black;
+    margin:50px auto;
+
+}
+
+.key-box{
+    display:flex;
+    justify-content:space-evenly;
+    border:1px solid black;
+    height:100%;
+    
+}
+
+.key{
+    width:70px;
+    height:70px;
+    margin:15px 0;
+    border:2px solid green;
+    font-size : 25px;
+    font-weight : bold;
+    padding:15px;
+    text-align:center;
+    user-select:none;
+}

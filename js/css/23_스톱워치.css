@@ -1,0 +1,42 @@
+*{
+    box-sizing:border-box;
+    padding:0px;
+    margin:0px;
+
+}
+
+main{
+    border:3px solid black;
+    height:300px;
+    width:270px;
+    margin:30px auto;
+    text-align:center;
+    padding:20px;
+
+}
+main > #display{
+    font-size:26px;
+    border-top : 2px solid grey;
+    border-bottom : 2px solid grey;
+
+    padding : 5px;
+}
+
+button{
+    width:70px;
+    height:30px;
+    margin-top:5px;
+    border-radius:40%;
+}
+
+button:hover{
+    font-weight:bold;
+    background-color:darkgrey;
+    cursor:pointer;
+}
+
+#recordContainer{
+    border-top : 2px solid grey;
+    margin-top : 5px;
+    list-style : none;
+}

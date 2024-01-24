@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사용자 입력으로 도형 생성</title>
+  <style>
+    #myDiv {
+      display: none;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+
+<label for="widthInput">너비:</label>
+<input type="number" id="widthInput" placeholder="너비를 입력하세요">
+
+<label for="heightInput">높이:</label>
+<input type="number" id="heightInput" placeholder="높이를 입력하세요">
+
+<button onclick="createShape()">도형 생성</button>
+<div id="myDiv"></div>
+
+<script>
+  function createShape() {
+    var widthInput = document.getElementById("widthInput");
+    var heightInput = document.getElementById("heightInput");
+    var myDiv = document.getElementById("myDiv");
+
+    var width = widthInput.value;
+    var height = heightInput.value;
+
+    if (width && height) {
+      myDiv.style.width = width + "px";
+      myDiv.style.height = height + "px";
+      myDiv.style.display = "block";
+    } else {
+      alert("너비와 높이를 입력하세요.");
+    }
+  }
+</script>
+
+</body>
+</html>
