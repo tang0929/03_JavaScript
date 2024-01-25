@@ -17,10 +17,10 @@ document.addEventListener("keydown", function(e){
 
   // 입력된 키를 소문자로 바꿔서 일치하는 case 실행
   switch(e.key.toLowerCase()){ 
-    case 'q' :  idx = 0; break;
-    case 'w' :  idx = 1; break;
-    case 'e' :  idx = 2; break;
-    case 'r' :  idx = 3; break;
+    case 'z' :  idx = 0; break;
+    case 'x' :  idx = 1; break;
+    case ',' :  idx = 2; break;
+    case '.' :  idx = 3; break;
     default  : return; // 함수 종료 
   }
 
@@ -35,10 +35,10 @@ document.addEventListener("keyup", function(e){
 
   let idx;
   switch(e.key.toLowerCase()){
-    case 'q' : idx = 0; break;
-    case 'w' : idx = 1; break;
-    case 'e' : idx = 2; break;
-    case 'r' : idx = 3; break;
+    case 'Z' : idx = 0; break;
+    case 'X' : idx = 1; break;
+    case '>' : idx = 2; break;
+    case '?' : idx = 3; break;
     default : return;
   }
 

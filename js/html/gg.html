@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>사용자 입력으로 도형 생성</title>
   <style>
-    #myDiv {
+    #shape {
       display: none;
       background-color: red;
     }
@@ -14,32 +14,15 @@
 <body>
 
 <label for="widthInput">너비:</label>
-<input type="number" id="widthInput" placeholder="너비를 입력하세요">
+<input type="number" id="widthInput">
 
 <label for="heightInput">높이:</label>
-<input type="number" id="heightInput" placeholder="높이를 입력하세요">
+<input type="number" id="heightInput">
 
 <button onclick="createShape()">도형 생성</button>
-<div id="myDiv"></div>
+<div id="shape"></div>
 
-<script>
-  function createShape() {
-    var widthInput = document.getElementById("widthInput");
-    var heightInput = document.getElementById("heightInput");
-    var myDiv = document.getElementById("myDiv");
-
-    var width = widthInput.value;
-    var height = heightInput.value;
-
-    if (width && height) {
-      myDiv.style.width = width + "px";
-      myDiv.style.height = height + "px";
-      myDiv.style.display = "block";
-    } else {
-      alert("너비와 높이를 입력하세요.");
-    }
-  }
-</script>
+<script src="../gg.js"></script>
 
 </body>
 </html>

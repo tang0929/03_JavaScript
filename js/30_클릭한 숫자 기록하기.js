@@ -1,5 +1,5 @@
 const numbers = document.querySelectorAll(".number");
-const result = document.querySelector("#result");
+const result = document.querySelector("#phoneNumber2");
 
 for(let item of numbers){
   item.addEventListener("click", e => {

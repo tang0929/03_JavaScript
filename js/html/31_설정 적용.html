@@ -1,72 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/31_설정적용.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30_설정적용</title>
+  <link rel="stylesheet" href="../css/30_설정적용.css">
 </head>
+
 <body>
-    <table>
-    <tr>
-        <td><b>너비 : </b></td>
-        <td>
-            <input type="number" id="width">px
-        </td>
-        <td><b>높이 : </b></td>
-        <td> <input type="number" id="height">px</td>
-    </tr>
-    <tr>
-        <td><b>글자크기 : </b></td>
-        <td>
-            <input type="number" id="size">px
-        </td>
-        <td><b>굵기 : </b></td>
-        <td>보통 <input type="radio" name="weight" value="normal"> 굵게 <input type="radio" name="weight" value="bold"></td>
-    </tr>
-    <tr>
-        <td><b>글자색 : </b></td>
-        <td>
-            <input type="text" id="fontColor">
-        </td>
-        <td><b>배경색 : </b></td>
-        <td>
-            <input type="text" id="backgroundColor">
-        </td>
-    </tr>
-    <tr>
-        <td><b>가로정렬 : </b></td>
-        <td>왼쪽 <input type="radio" name="rowPosition" value="rowLeft">
-            가운데 <input type="radio" name="rowPosition" value="rowCenter">
-            오른쪽 <input type="radio" name="rowPosition" value="rowRight"></td>
-    </tr>
-    <tr>
-        <td><b>세로정렬 : </b></td>
-        <td>위 <input type="radio" name="colPosition" value="colUp">
-            가운데 <input type="radio" name="colPosition" value="colCenter">
-            아래 <input type="radio" name="colPosition" value="colDown"></td>
-    </tr>
-    <tr>
-        <td>
-            <b>출력 문자열 :</b>
-        </td>
-        <td colspan = "3">
-            <input type="text" id="content" size="50px">
-        </td>
-    </tr>
-    <tr>
-        <td><button id="apply">적용하기</button></td>
-    </tr>
-    
 
-    
+  <div class="container">
 
+    <table class="controller">
+      <tr>
+        <th>너비 : </th>
+        <td><input type="number" min="1" max="1000" id="box-width"> px</td>
+        <th>높이 : </th>
+        <td><input type="number" min="1" max="1000" id="box-height"> px</td>
+      </tr>
 
+      <tr>
+        <th>글자크기 : </th>
+        <td><input type="number" min="1" max="100" id="fs"> px</td>
+        <th>굵기 : </th>
+        <td>
+          <label>보통 <input type="radio" name="fw" value="normal"></label>
+          <label>굵게 <input type="radio" name="fw" value="bold"></label>
+        </td>
+      </tr>
+
+      <tr>
+        <th>글자색 : </th>
+        <td><input type="text" id="box-font-color"></td>
+        <th>배경색 : </th>
+        <td><input type="text" id="box-bg-color"></td>
+      </tr>
+
+      <tr>
+        <th>가로정렬 : </th>
+        <td colspan="3">
+          <label>왼쪽 <input type="radio" name="align-row" value="flex-start"></label>
+          <label>가운데 <input type="radio" name="align-row" value="center"></label>
+          <label>오른쪽 <input type="radio" name="align-row" value="flex-end"></label>
+        </td>
+      </tr>
+
+      <tr>
+        <th>세로정렬 : </th>
+        <td colspan="3">
+          <label>위 <input type="radio" name="align-col" value="flex-start"></label>
+          <label>가운데 <input type="radio" name="align-col" value="center"></label>
+          <label>아래 <input type="radio" name="align-col" value="flex-end"></label>
+        </td>
+      </tr>
+
+      <tr>
+        <th>출력 문자열 : </th>
+        <td colspan="3">
+          <input type="text" id="content">
+        </td>
+      </tr>
     </table>
 
-    <div id="box"></div>
+    <button id="apply-btn">적용하기</button>
+    <button id="reset-btn">초기화</button>
 
-    <script src="../31_설정적용.js"></script>
-    
+    <div id="box"></div>
+  </div>
+
+  <script src="../31_설정적용.js"></script>
 </body>
+
 </html>
