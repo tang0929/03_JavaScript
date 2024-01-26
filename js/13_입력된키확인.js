@@ -35,10 +35,10 @@ document.addEventListener("keyup", function(e){
 
   let idx;
   switch(e.key.toLowerCase()){
-    case 'Z' : idx = 0; break;
-    case 'X' : idx = 1; break;
-    case '>' : idx = 2; break;
-    case '?' : idx = 3; break;
+    case 'q' : idx = 0; break;
+    case 'w' : idx = 1; break;
+    case 'e' : idx = 2; break;
+    case 'r' : idx = 3; break;
     default : return;
   }
 
